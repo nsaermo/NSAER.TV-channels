@@ -1,0 +1,5 @@
+~~ DO NOT EDIT THE FIRST 2 LINES
+~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
+
+qraekreem2  | General TV |  |
+https://hls.chew.jp/youtube/?channel=UC6W_OgG8P31BVf9EVe5d8Ig.m3u8
