@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-http://185.114.147.27:2082/push/292030505320/fCAkRHyCC2/143346.m3u8?md5=b4ec959547186689e47706e2b2dd980b&token=fb4ba537adbce366495f680caf495506
+https://cdn.live.easybroadcast.io/abr_corp/66_al24_u4yga6h/corp/66_al24_u4yga6h_1080p/chunks.m3u8
