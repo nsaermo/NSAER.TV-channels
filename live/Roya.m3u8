@@ -1,10 +1,39 @@
-<div class="videoPlayer" style="height:500px">
-<iframe id="MyPlayerIFRAME" class="MyPlayerIFRAME" src="http://azrogo.com/m3u8/roya/?id=Roya" onclick="return false;" style="border: 0px solid black" allowfullscreen="0" height="100%" name="PlayerBox" scrolling="no" width="100%"></iframe>
+<head>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<script src="//ssl.p.jwpcdn.com/player/v/8.17.7/jwplayer.js"></script>
+<meta name="referrer" content="no-referrer">
+<style>
+*{margin:0px}
+.MyPlayer { counter-increment: item; display: -ms-flexbox; display: -webkit-flex; display: flex; min-width: 100%; height: 100%; overflow:hidden; scroll-snap-align: center; -webkit-justify-content: center; justify-content: center; align-items: center; scroll-snap-align: start; flex-shrink: 0; transform-origin: center center; transform: scale(1); transition: transform .5s; margin:0px }.MyPlayer{counter-increment:item;display:-ms-flexbox;display:-webkit-flex;display:flex;min-width:100%;height:100%;scroll-snap-align:center;-webkit-justify-content:center;justify-content:center;align-items:center;scroll-snap-align:start;flex-shrink:0;transform-origin:center center;transform:scale(1);transition:transform .5s}
+.LAZYMYIFRME{width:100%;height:100%;background-color:var(--LAZYMYIFRME-bg-color)}
+.LAZYMYIFRME:hover{cursor:pointer}
+.LAZYMYIFRME::before{display:block;content:"";width:100%;padding-top:100%}
+.LAZYMYIFRME::after{content:"";position:absolute;left:50%;top:50%;width:100px;height:82px;margin-left:-50px;margin-top:-50px;background-image:var(--player-button, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='rgb(53, 59, 72)' d='M255.7 446.3c-53.3.3-106.6-.4-159.8-3.3-17.4-1-34.7-2.5-50.4-11C35 426.3 27 418.4 22 407.2 13.2 388.6 10.5 369 9 349c-3.4-41.3-3.6-82.6-1.8-123.8 1-22 1.6-44 6.8-65.5 2-8.4 5-16.6 8.8-24.4C32 117 48 108 67.3 104c16.2-3 32.8-3 49.3-3.7 56-2.3 112-3.5 168-3 43 .6 86.2 1.7 129.3 4 13.2.6 26.6.8 39.3 5.5 17.2 6.4 30 17.2 37 34.7 6.6 16.8 9.2 34.2 10.6 52 3.8 48.7 4 97.3.7 146-1 16.3-2.2 32.7-6.5 48.8-9.7 37-32.8 51.5-66.7 53.8-36.2 2.5-72.5 3.8-108.8 4.3-21.3.2-42.7 0-64 0zM203.2 344L348 264.7l-144.8-79.3V344z'/%3E%3Cpath fill='%23FEFDFD' d='M203.2 344V185.5L348 264.8 203.2 344z'/%3E%3C/svg%3E"));background-position:center center;background-repeat:no-repeat;opacity:.8;border:none;z-index:4;}
+.LAZYMYIFRME:hover::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23DD2C28' d='M255.7 446.3c-53.3.3-106.6-.4-159.8-3.3-17.4-1-34.7-2.5-50.4-11C35 426.3 27 418.4 22 407.2 13.2 388.6 10.5 369 9 349c-3.4-41.3-3.6-82.6-1.8-123.8 1-22 1.6-44 6.8-65.5 2-8.4 5-16.6 8.8-24.4C32 117 48 108 67.3 104c16.2-3 32.8-3 49.3-3.7 56-2.3 112-3.5 168-3 43 .6 86.2 1.7 129.3 4 13.2.6 26.6.8 39.3 5.5 17.2 6.4 30 17.2 37 34.7 6.6 16.8 9.2 34.2 10.6 52 3.8 48.7 4 97.3.7 146-1 16.3-2.2 32.7-6.5 48.8-9.7 37-32.8 51.5-66.7 53.8-36.2 2.5-72.5 3.8-108.8 4.3-21.3.2-42.7 0-64 0zM203.2 344L348 264.7l-144.8-79.3V344z'/%3E%3Cpath fill='%23FEFDFD' d='M203.2 344V185.5L348 264.8 203.2 344z'/%3E%3C/svg%3E");opacity:1}
+.LAZYMYIFRME[data-ratio="16:9"]::before{padding-top:56.25%}
+.LAZYMYIFRME[data-ratio="4:3"]::before{padding-top:75%}
+.LAZYMYIFRME iframe{position:absolute;top:0;right:0;bottom:0;left:0;z-index:5;width:100%;height:100%}
+#container { width: 100%; height: 100%; position: relative; } 
+#infoi { width: 60px; height: 60px; background-color: transparent; position:fixed; bottom: 0; right:0; } 
+#navi { width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: transparent; } 
+#infoi { z-index: 10;}
+</style>
+</head>
+<div id="container">
+  <div id="navi">
+ <div class="MyPlayer" id="demo">
+  
+    <div id="Plyr3"></div>
+    <script type="text/javascript">jwplayer.key="oXqNrzSZ9lQbo5mgdmfM+TwMP/GR4bAiKFXy8nlANTs=";
+    jwplayer("Plyr3").setup({playlist: [{
+    file : "https://ochuergrys.erbvr.com/roya/roya.m3u8?st=fy9iCTMUmJpt-6m78trp8Q&e=1771713420"      }],
+    allowfullscreen:'true',skin: "", width: "100%", height: "100%", stretching: 'exactfit',
+    androidhls: 'true',hlshtml: true, primary: "html5", autostart: ""});  </script>
 </div>
-
-<div id="DivPB2" class="DivPB2">
-<div class="SelectLive">
-<div class="SelectLiveBody">
-<div class="SelectLiveRow"> <div id="live2" class="SelectLiveGplus btnlive" onclick="PlayerBox.location.href='/player/?id=https://royatv-live.daioncdn.net/royatv/royatv_1080p.m3u8'"><span><img src="/files/pages/l2.png" alt="l1" /></span></div><div id="live1" class="SelectLiveTwi btnlive active" onclick="window.location.reload()"><span><img src="/files/pages/l1.png" alt="l1" /></span></div>
 </div>
 </div>
+<script>
+  function myFunction() {
+    location.reload();
+  }
+</script
