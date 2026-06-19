@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+https://vstream6.hadara.ps:8443/AlfajertvHD2_web/web/chunks.m3u8?nimblesessionid=421382598&wmsAuthSign=c2VydmVyX3RpbWU9Ni8xOS8yMDI2IDQ6NDc6MTQgUE0maGFzaF92YWx1ZT1lR2RpaE80SU5RQ3dCRWt6YitXSzJBPT0mdmFsaWRtaW51dGVzPTE4MCZpZD1jdnE3czlwbWxnNjFsNDUwbGk1NWNhZ3ViMQ==|Referer=https://tv.alfajertv.com/old/live-westbank-3-b.php
