@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-https://royatv-live.daioncdn.net/royatv/royatv.m3u8
+https://live.kwikmotion.com/royatvlive/royatv.smil/royatvpublish/royatv_720p/hdntl=exp=1782920457~acl=%2froyatvlive%2froyatv.smil%2f*~data=hdntl~hmac=67b831929bdc51b746016387aca9c295964462d5d364fba94c50beb1f90a5a60/chunks.m3u8|Referer=https://ticket.roya-tv.com/
